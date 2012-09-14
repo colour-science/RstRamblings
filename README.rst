@@ -50,7 +50,6 @@ The description file is a configuration style file with a structure similar to w
 	Url = http://www.hdrlabs.com/
 	Description = Core tests Component A.
 
-
 Given the following directories structure::
 
 	core
@@ -78,15 +77,15 @@ Instantiating the Components Manager is done the following way:
 	>>> manager.getInterface("core.testsComponentA")
 	<testsComponentA.TestsComponentA object at 0x11dd990>
 
-**manager.componentsManager.Manager.getInterface(name)** method returns the interface of given component, in the previous example it's the object declared in the description file by this statement: **Object = TestsComponentA**.
+**manager.componentsManager.Manager.getInterface(name)** method returns the interface of given Component, in the previous example it's the object declared in the description file by this statement: **Object = TestsComponentA**.
 
-Three base components are provided by default:
+Three base Components are provided by default:
 
 -  **manager.component.Component**
 -  **manager.qobjectComponent.QObjectComponent**
 -  **manager.qwidgetComponent.QWidgetComponent**
 
-When inheriting from those components, one have to reimplement the following methods:
+When inheriting from those Components, one have to reimplement the following methods:
 
 -  **activate**
 -  **deactivate**
@@ -98,7 +97,7 @@ The following attributes have to be set in those methods so that associated sign
 - **activated**
 - **initialized** ( **initializedUi** for **manager.qwidgetComponent.QWidgetComponent** )
 
-Reference component implementation example class:
+Reference Component implementation example class:
 
 .. code:: python
 
