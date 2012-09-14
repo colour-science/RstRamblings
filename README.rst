@@ -78,12 +78,25 @@ Instantiating the Components Manager is done the following way:
 	>>> manager.getInterface("core.testsComponentA")
 	<testsComponentA.TestsComponentA object at 0x11dd990>
 
-| **manager.componentsManager.Manager.getInterface(name)** method returns the interface of given component, in the previous example it's the object declared in the description file by this statement: **Object = TestsComponentA**.
-| Three base components are provided by default::
+**manager.componentsManager.Manager.getInterface(name)** method returns the interface of given component, in the previous example it's the object declared in the description file by this statement: **Object = TestsComponentA**.
 
--  **manager.component.Component**:
--  **manager.qobjectComponent.QObjectComponent**:
--  **manager.qwidgetComponent.QWidgetComponent**: 
+Three base components are provided by default:
+
+-  **manager.component.Component**
+-  **manager.qobjectComponent.QObjectComponent**
+-  **manager.qwidgetComponent.QWidgetComponent**
+
+When inheriting from one of those components, one have to reimplement the following methods:
+
+-  activate
+-  deactivate
+-  initialize ( initializeUi for **manager.qwidgetComponent.QWidgetComponent** )
+-  uninitialize ( uninitializeUi for **manager.qwidgetComponent.QWidgetComponent** )
+
+The following attributes have to be set in those methods so that associated signals are emitted:
+
+- activated
+- initialized ( initializedUi for **manager.qwidgetComponent.QWidgetComponent** )
 
 About
 -----
