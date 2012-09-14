@@ -64,7 +64,7 @@ Given the following directories structure::
 		├── testsComponentB.py
 		└── testsComponentB.rc
 
-Instantiating the Components Manager is done the following way::
+Instantiating the Components Manager is done the following way:
 
 .. code:: python
 
