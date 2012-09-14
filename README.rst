@@ -6,7 +6,7 @@ Manager
 Introduction
 ------------
 
-Manager is the Components Manager package of `Umbra <https://github.com/KelSolaar/Umbra>`_, `sIBL_GUI <https://github.com/KelSolaar/sIBL_GUI>`_ and `sIBL_Reporter <https://github.com/KelSolaar/sIBL_Reporter>`_. Components are simple python packages extending capabilities of their host application.
+**Manager** is the Components Manager package of `Umbra <https://github.com/KelSolaar/Umbra>`_, `sIBL_GUI <https://github.com/KelSolaar/sIBL_GUI>`_ and `sIBL_Reporter <https://github.com/KelSolaar/sIBL_Reporter>`_. Components are simple python packages extending capabilities of their host application.
 
 Installation
 ------------
@@ -78,8 +78,13 @@ Instantiating the Components Manager is done the following way:
 	>>> manager.getInterface("core.testsComponentA")
 	<testsComponentA.TestsComponentA object at 0x11dd990>
 
-**manager.getInterface(componentName)** method will return the interface of given component, in the previous example
-it's be the object declated in the description file: **Object = TestsComponentA**.
+| **manager.componentsManager.Manager.getInterface(name)** method returns the interface of given component, in the previous example
+it's the object declared in the description file by this statement: **Object = TestsComponentA**.
+| Three base components are provided by default::
+
+-  **manager.component.Component**:
+-  **manager.qobjectComponent.QObjectComponent**:
+-  **manager.qwidgetComponent.QWidgetComponent**: 
 
 About
 -----
