@@ -96,73 +96,42 @@ When inheriting from those components, one have to reimplement the following met
 The following attributes have to be set in those methods so that associated signals are emitted:
 
 - **activated**
-- **initialized** ( initializedUi for **manager.qwidgetComponent.QWidgetComponent** )
+- **initialized** ( **initializedUi** for **manager.qwidgetComponent.QWidgetComponent** )
 
-Component implementation example:
+Reference component implementation example class:
 
 .. code:: python
 
 	class TestsComponentA(Component):
 
 		def __init__(self, name=None):
-			"""
-			This method initializes the class.
-
-			:param name: Component name. ( String )
-			"""
-
 			Component.__init__(self, name=name)
-
+			
 			self.deactivatable = True
 
 		def activate(self):
-			"""
-			This method activates the Component.
-
-			:return: Method success. ( Boolean )
-			"""
-
 			print("> Activating '{0}' Component.".format(self.__class__.__name__))
 
 			self.activated = True
 			return True
 
 		def deactivate(self):
-			"""
-			This method deactivates the Component.
-
-			:return: Method success. ( Boolean )
-			"""
-
 			print("> Deactivating '{0}' Component.".format(self.__class__.__name__))
 
 			self.activated = False
 			return True
 
 		def initialize(self):
-			"""
-			This method initializes the Component.
-
-			:return: Method success. ( Boolean )
-			"""
-
 			print("> Initializing '{0}' Component.".format(self.__class__.__name__))
 
 			self.initialized = True
 			return True
 
 		def uninitialize(self):
-			"""
-			This method uninitializes the Component.
-
-			:return: Method success. ( Boolean )
-			"""
-
 			print("> Uninitializing '{0}' Component.".format(self.__class__.__name__))
 
 			self.initialized = False
 			return True
-
 
 About
 -----
