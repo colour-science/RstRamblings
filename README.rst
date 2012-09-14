@@ -27,14 +27,46 @@ Alternatively, if you want to directly install from `Github <http://github.com/K
 Usage
 -----
 
-A Component package contains at least a resource description file and a main module::
+A Component package contains at least a resource **.rc** description file and a main module::
 
+	testsComponentA
+	├── __init__.py
+	├── testsComponentA.py
+	└── testsComponentA.rc
+
+The description file is a configuration style file with a structure similar to what you would find on Microsoft Windows INI files::
+
+	[Component]
+	Name = core.testsComponentA
+	Title = Tests Component A
+	Module = testsComponentA
+	Object = TestsComponentA
+	Rank = 10
+	Version = 1.0
+
+	[Informations]
+	Author = Thomas Mansencal
+	Email = thomas.mansencal@gmail.com
+	Url = http://www.hdrlabs.com/
+	Description = Core tests Component A.
+
+
+Given the following directories structure::
+
+	core
+	├── __init__.py
 	├── testsComponentA
 	│   ├── __init__.py
-	│   ├── __init__.pyc
 	│   ├── testsComponentA.py
-	│   ├── testsComponentA.pyc
 	│   └── testsComponentA.rc
+	└── testsComponentB
+		├── __init__.py
+		├── testsComponentB.py
+		└── testsComponentB.rc
+
+Instantiating the Components Manager is done the following way::
+
+.. code:: python
 
 	>>> manager = Manager(("./manager/tests/testsManager/resources/components/core",))
 	>>> manager.registerComponents()
