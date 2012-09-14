@@ -78,8 +78,7 @@ Instantiating the Components Manager is done the following way:
 	>>> manager.getInterface("core.testsComponentA")
 	<testsComponentA.TestsComponentA object at 0x11dd990>
 
-| **manager.componentsManager.Manager.getInterface(name)** method returns the interface of given component, in the previous example
-it's the object declared in the description file by this statement: **Object = TestsComponentA**.
+| **manager.componentsManager.Manager.getInterface(name)** method returns the interface of given component, in the previous example it's the object declared in the description file by this statement: **Object = TestsComponentA**.
 | Three base components are provided by default::
 
 -  **manager.component.Component**:
