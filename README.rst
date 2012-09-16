@@ -92,8 +92,6 @@ When inheriting from those Components, one have to reimplement the following met
 -  **activate**
 -  **deactivate**
 
-.. important::
-
 	**activated** attribute has to be set accordingly in the methods implementation.
 
 When implementing a **manager.qwidgetComponent.Component** or **manager.qobjectComponent.QObjectComponent**, the following methods are also needed:
@@ -101,16 +99,12 @@ When implementing a **manager.qwidgetComponent.Component** or **manager.qobjectC
 -  **initialize**
 -  **uninitialize**
 
-.. important::
-
 	**initialized** attribute has to be set accordingly in the methods implementation.
 
 Or alternatively, those methods when implementing a **manager.qwidgetComponent.QWidgetComponent**:
 
 -  **initializeUi**
 -  **uninitializeUi**
-
-.. important::
 
 	**initializedUi** attribute has to be set accordingly in the methods implementation.
 
