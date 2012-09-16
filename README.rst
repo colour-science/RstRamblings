@@ -65,7 +65,7 @@ Given the following directories structure::
 		├── testsComponentB.py
 		└── testsComponentB.rc
 
-Instantiating the Components Manager is done the following way:
+Instantiating the Components Manager is done the following way::
 
 .. code:: python
 
@@ -92,23 +92,23 @@ When inheriting from those Components, one have to reimplement the following met
 -  **activate**
 -  **deactivate**
 
-	**activated** attribute has to be set accordingly in the methods implementation.
+**activated** attribute has to be set accordingly in the methods implementation.
 
 When implementing a **manager.qwidgetComponent.Component** or **manager.qobjectComponent.QObjectComponent**, the following methods are also needed:
 
 -  **initialize**
 -  **uninitialize**
 
-	**initialized** attribute has to be set accordingly in the methods implementation.
+**initialized** attribute has to be set accordingly in the methods implementation.
 
 Or alternatively, those methods when implementing a **manager.qwidgetComponent.QWidgetComponent**:
 
 -  **initializeUi**
 -  **uninitializeUi**
 
-	**initializedUi** attribute has to be set accordingly in the methods implementation.
+**initializedUi** attribute has to be set accordingly in the methods implementation.
 
-Reference Component implementation example class:
+Reference Component implementation example class::
 
 .. code:: python
 
