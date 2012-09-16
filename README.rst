@@ -1,7 +1,7 @@
 Manager
 =======
 
-..  image:: https://secure.travis-ci.org/KelSolaar/Foundations.png?branch=master
+..  image:: https://secure.travis-ci.org/KelSolaar/Manager.png?branch=master
 
 Introduction
 ------------
@@ -27,6 +27,8 @@ Alternatively, if you want to directly install from `Github <http://github.com/K
 Usage
 -----
 
+Please refer to `Manager - Api <http://thomasmansencal.com/Sharing/Manager/Support/Documentation/Api/index.html>`_ for precise usage examples.
+
 A Component package contains at least a resource **.rc** description file and a main module::
 
 	testsComponentA
@@ -34,7 +36,7 @@ A Component package contains at least a resource **.rc** description file and a 
 	├── testsComponentA.py
 	└── testsComponentA.rc
 
-The description file is a configuration style file with a structure similar to what you would find on Microsoft Windows INI files::
+The description file is a configuration style file with a structure similar to what you would find in Microsoft Windows INI files::
 
 	[Component]
 	Name = core.testsComponentA
@@ -85,17 +87,32 @@ Three base Components are provided by default:
 -  **manager.qobjectComponent.QObjectComponent**
 -  **manager.qwidgetComponent.QWidgetComponent**
 
-When inheriting from those Components, one have to reimplement the following methods:
+When inheriting from those Components, one have to reimplement the following methods for all the Components types:
 
 -  **activate**
 -  **deactivate**
--  **initialize** ( **initializeUi** for **manager.qwidgetComponent.QWidgetComponent** )
--  **uninitialize** ( **uninitializeUi** for **manager.qwidgetComponent.QWidgetComponent** )
 
-The following attributes have to be set in those methods so that associated signals are emitted:
+.. important::
 
-- **activated**
-- **initialized** ( **initializedUi** for **manager.qwidgetComponent.QWidgetComponent** )
+	**activated** attribute has to be set accordingly in the methods implementation.
+
+When implementing a **manager.qwidgetComponent.Component** or **manager.qobjectComponent.QObjectComponent**, the following methods are also needed:
+
+-  **initialize**
+-  **uninitialize**
+
+.. important::
+
+	**initialized** attribute has to be set accordingly in the methods implementation.
+
+Or alternatively, those methods when implementing a **manager.qwidgetComponent.QWidgetComponent**:
+
+-  **initializeUi**
+-  **uninitializeUi**
+
+.. important::
+
+	**initializedUi** attribute has to be set accordingly in the methods implementation.
 
 Reference Component implementation example class:
 
@@ -135,7 +152,7 @@ Reference Component implementation example class:
 About
 -----
 
-| Manager by Thomas Mansencal – 2008 - 2012
+| **Manager** by Thomas Mansencal – 2008 - 2012
 | Copyright© 2008 - 2012 – Thomas Mansencal – `thomas.mansencal@gmail.com <mailto:thomas.mansencal@gmail.com>`_
 | This software is released under terms of GNU GPL V3 license: http://www.gnu.org/licenses/
 | `http://www.thomasmansencal.com/ <http://www.thomasmansencal.com/>`_
