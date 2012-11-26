@@ -43,7 +43,7 @@ To install **sIBL_GUI** from the `Python Package Index <http://pypi.python.org/p
 
       pip install sIBL_GUI
 
-or this alternative command:
+or this alternative command::
 
       easy install sIBL_GUI
 
