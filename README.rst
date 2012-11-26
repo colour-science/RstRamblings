@@ -1,152 +1,42 @@
-Manager
-=======
+sIBL_GUI
+========
 
-..  image:: https://secure.travis-ci.org/KelSolaar/Manager.png?branch=master
+..  image:: https://secure.travis-ci.org/KelSolaar/sIBL_GUI.png?branch=master
 
 Introduction
 ------------
 
-**Manager** is the Components Manager package of `Umbra <https://github.com/KelSolaar/Umbra>`_, `sIBL_GUI <https://github.com/KelSolaar/sIBL_GUI>`_ and `sIBL_Reporter <https://github.com/KelSolaar/sIBL_Reporter>`_. Components are simple python packages extending capabilities of their host application.
+| **sIBL_GUI** is an open source lighting assistant making the Image Based Lighting process easier and straight forward through the use of sIbl files (*.Ibl*).
+| What is sIBL? It’s a short for *Smart IBL*, a standard describing all informations and files needed to provide a fast and easy Image Based Lighting Setup in the 3d package of your choice.
+
+More detailed informations are available here: http://www.smartibl.com
 
 Installation
 ------------
 
-To install **Manager** from the `Python Package Index <http://pypi.python.org/pypi/Manager>`_ you can issue this command in a shell::
+For Installation and Usage check the Manual / Help File available here: http://kelsolaar.hdrlabs.com/sIBL_GUI/Support/Documentation/Help/index.html and the related thread here: http://www.hdrlabs.com/cgi-bin/forum/YaBB.pl?num=1271609371
+sIBL_GUI depends on some other packages / repositories:
 
-	pip install Manager
+-   Foundations package available from Github: https://github.com/KelSolaar/Foundations. You will need to create a symbolic link from "Foundations/src/foundations" to "sIBL_GUI/src/foundations" and from "Foundations/src/tests/testsFoundations" to "sIBL_GUI/src/tests/testsFoundations" or ensure the packages are available in Python path.
+-   Manager package available from Github: https://github.com/KelSolaar/Manager. You will need to create a symbolic link from "Manager/src/manager" to "sIBL_GUI/src/manager" and from "Manager/src/tests/testsManager" to "sIBL_GUI/src/tests/testsManager" or ensure the packages are available in Python path.
+-   Umbra package available from Github: https://github.com/KelSolaar/Umbra. You will need to create a symbolic link from "Umbra/src/umbra" to "sIBL_GUI/src/umbra" and from "Umbra/src/tests/testsUmbra" to "sIBL_GUI/src/tests/testsUmbra" or ensure the packages are available in Python path.
+-   sIBL_GUI_Templates repository available from Github: https://github.com/KelSolaar/sIBL_GUI_Templates. You will need to create a symbolic link from "sIBL_GUI_Templates/src/templates" to "sIBL_GUI/src/sibl_gui/resources/templates".
 
-or this alternative command::
+Quick Repositories Cloning Commands::
 
-	easy_install Manager
-
-Alternatively, if you want to directly install from `Github <http://github.com/KelSolaar/Manager>`_ source repository::
-
-	git clone git://github.com/KelSolaar/Manager.git
-	python setup.py install
+   mkdir HDRLabs
+   cd HDRLabs/
+   git clone git://github.com/KelSolaar/sIBL_GUI.git && git clone git://github.com/KelSolaar/Foundations.git &&  git clone git://github.com/KelSolaar/Manager.git && git clone git://github.com/KelSolaar/Umbra.git && git clone git://github.com/KelSolaar/sIBL_GUI_Templates.git
+   cd sIBL_GUI/src/
+   python sIBL_GUI.py
 
 Usage
 -----
 
-Please refer to `Manager - Api <http://thomasmansencal.com/Sharing/Manager/Support/Documentation/Api/index.html>`_ for precise usage examples.
-
-A Component package contains at least a resource **.rc** description file and a main module::
-
-	testsComponentA
-	├── __init__.py
-	├── testsComponentA.py
-	└── testsComponentA.rc
-
-The description file is a configuration style file with a structure similar to what you would find in Microsoft Windows INI files::
-
-	[Component]
-	Name = core.testsComponentA
-	Title = Tests Component A
-	Module = testsComponentA
-	Object = TestsComponentA
-	Rank = 10
-	Version = 1.0
-
-	[Informations]
-	Author = Thomas Mansencal
-	Email = thomas.mansencal@gmail.com
-	Url = http://www.hdrlabs.com/
-	Description = Core tests Component A.
-
-Given the following directories structure::
-
-	core
-	├── __init__.py
-	├── testsComponentA
-	│   ├── __init__.py
-	│   ├── testsComponentA.py
-	│   └── testsComponentA.rc
-	└── testsComponentB
-		├── __init__.py
-		├── testsComponentB.py
-		└── testsComponentB.rc
-
-Instantiating the Components Manager is done the following way::
-
-.. code:: python
-
-	>>> manager = Manager(("./manager/tests/testsManager/resources/components/core",))
-	>>> manager.registerComponents()
-	True
-	>>> manager.listComponents()
-	['core.testsComponentA', 'core.testsComponentB']
-	>>> manager.instantiateComponents()
-	True
-	>>> manager.getInterface("core.testsComponentA")
-	<testsComponentA.TestsComponentA object at 0x11dd990>
-
-**manager.componentsManager.Manager.getInterface(name)** method returns the interface of given Component, in the previous example it's the object declared in the description file by this statement: **Object = TestsComponentA**.
-
-Three base Components are provided by default:
-
--  **manager.component.Component**
--  **manager.qobjectComponent.QObjectComponent**
--  **manager.qwidgetComponent.QWidgetComponent**
-
-When inheriting from those Components, one have to reimplement the following methods for all the Components types:
-
--  **activate**
--  **deactivate**
-
-**activated** attribute has to be set accordingly in the methods implementation.
-
-When implementing a **manager.qwidgetComponent.Component** or **manager.qobjectComponent.QObjectComponent**, the following methods are also needed:
-
--  **initialize**
--  **uninitialize**
-
-**initialized** attribute has to be set accordingly in the methods implementation.
-
-Or alternatively, those methods when implementing a **manager.qwidgetComponent.QWidgetComponent**:
-
--  **initializeUi**
--  **uninitializeUi**
-
-**initializedUi** attribute has to be set accordingly in the methods implementation.
-
-Reference Component implementation example class::
-
-.. code:: python
-
-	class TestsComponentA(Component):
-
-		def __init__(self, name=None):
-			Component.__init__(self, name=name)
-			
-			self.deactivatable = True
-
-		def activate(self):
-			print("> Activating '{0}' Component.".format(self.__class__.__name__))
-
-			self.activated = True
-			return True
-
-		def deactivate(self):
-			print("> Deactivating '{0}' Component.".format(self.__class__.__name__))
-
-			self.activated = False
-			return True
-
-		def initialize(self):
-			print("> Initializing '{0}' Component.".format(self.__class__.__name__))
-
-			self.initialized = True
-			return True
-
-		def uninitialize(self):
-			print("> Uninitializing '{0}' Component.".format(self.__class__.__name__))
-
-			self.initialized = False
-			return True
-
 About
 -----
 
-| **Manager** by Thomas Mansencal – 2008 - 2012
+| **sIBL_GUI** by Thomas Mansencal – 2008 - 2012
 | Copyright© 2008 - 2012 – Thomas Mansencal – `thomas.mansencal@gmail.com <mailto:thomas.mansencal@gmail.com>`_
 | This software is released under terms of GNU GPL V3 license: http://www.gnu.org/licenses/
 | `http://www.thomasmansencal.com/ <http://www.thomasmansencal.com/>`_
