@@ -1,78 +1,89 @@
-sIBL_GUI
-========
+Colour - Demosaicing
+====================
 
-..  image:: https://secure.travis-ci.org/KelSolaar/sIBL_GUI.png?branch=master
+A `Python <https://www.python.org/>`_ package implementing various CFA (Colour Filter Array) demosaicing algorithms and related utilities.
 
-Introduction
-------------
+It is open source and freely available under the `New BSD License <http://opensource.org/licenses/BSD-3-Clause>`_ terms.
 
-| **sIBL_GUI** is an open source lighting assistant making the Image Based Lighting process easier and straight forward through the use of sIbl files (*.Ibl*).
-| What is sIBL? It’s a short for *Smart IBL*, a standard describing all informations and files needed to provide a fast and easy Image Based Lighting Setup in the 3d package of your choice.
+Features
+--------
 
-More detailed informations are available here: http://www.smartibl.com
+The following CFA (Colour Filter Array) demosaicing algorithms are implemented:
 
-..  image:: http://kelsolaar.hdrlabs.com/sIBL_GUI/Support/Documentation/Help/resources/pictures/sIBL_GUI_SetsCentricLayout.jpg
+- Bilinear
+- Malvar (2004)
+- DDFAPD - Menon (2007)
 
 Installation
 ------------
 
-Windows Platform
-^^^^^^^^^^^^^^^^
+Dependencies
+^^^^^^^^^^^^
 
-Installation on Windows is pretty straightforward, just launch *sIBL_GUI.exe*.
+**Colour - Demosaicing** requires various dependencies in order to run:
 
-In order to support third party images formats through FreeImage you may need to install
-`Microsoft Visual C++ 2010 Redistributable Package (x64) <http://download.microsoft.com/download/A/8/0/A80747C3-41BD-45DF-B505-E9710D2744E0/vcredist_x64.exe>`_.
+-  `Python 2.7 <https://www.python.org/download/releases/>`_ or
+   `Python 3.5 <https://www.python.org/download/releases/>`_
+-  `NumPy <http://www.numpy.org/>`_
+-  `OpenImageIO <https://github.com/OpenImageIO/oiio>`_
 
-Mac Os X Platform
-^^^^^^^^^^^^^^^^^
+Pypi
+^^^^
 
-Open *sIBL_GUI.dmg* and drag *sIBL_GUI.app* into the *Application* directory.
+Once the dependencies satisfied, **Colour - Demosaicing** can be installed from
+the `Python Package Index <http://pypi.python.org/pypi/colour-demosaicing>`_ by
+issuing this command in a shell::
+
+	pip install colour-demosaicing
+
+The tests suite dependencies are installed as follows::
+
+    pip install 'colour-demosaicing[tests]'
+
+The documentation building dependencies are installed as follows::
+
+    pip install 'colour-demosaicing[docs]'
 
 
-Linux Platform
-^^^^^^^^^^^^^^
-
-| *sIBL_GUI 4* is currently not built on Linux because of several issues.
-
-The following dependencies are needed:
-
--  **Python 2.6.7** or **Python 2.7.3**: http://www.python.org/
--  **PyQt**: http://www.riverbankcomputing.co.uk/
-
-To install **sIBL_GUI** from the `Python Package Index <http://pypi.python.org/pypi/sIBL_GUI>`_ you can issue this command in a shell::
-
-      pip install sIBL_GUI
-
-or this alternative command::
-
-      easy install sIBL_GUI
-
-If you want to support third party images formats through FreeImage, you will need to recompile `FreeImage <https://github.com/KelSolaar/FreeImage>`_ with the following patch over it:
-
-- **FreeImage_For_sIBL_GUI**: https://github.com/KelSolaar/FreeImage_For_sIBL_GUI
-
-Alternatively, if you want to directly install from `Github <http://github.com/KelSolaar/sIBL_GUI>`_ source repository::
-
-      git clone git://github.com/KelSolaar/sIBL_GUI.git
-      cd sIBL_GUI
-      python setup.py install
-
-If you want to build the documentation you will also need:
-
--  **Tidy** http://tidy.sourceforge.net/
+    Because of their size, the resources dependencies needed to run the various
+    examples and unit tests are not provided with the Pypi package. They are
+    separately available as
+    `Git Submodules <https://git-scm.com/book/en/v2/Git-Tools-Submodules>`_
+    when cloning the
+    `repository <https://github.com/colour-science/colour-demosaicing>`_.
 
 Usage
 -----
 
-Once installed, you can launch **sIBL_GUI** using this shell command::
+API
+^^^
 
-      sIBL_GUI
+The main reference for
+`Colour - Demosaicing <https://github.com/colour-science/colour-demosaicing>`_
+is the complete sphinx API Reference:
+
+-   :doc:`API Reference <api>`
+
+Examples
+^^^^^^^^
+
+Various usage examples are available from the
+`examples directory <https://github.com/colour-science/colour-demosaicing/tree/master/colour_demosaicing/examples>`_.
+
+Contributing
+------------
+
+If you would like to contribute to `Colour - Demosaicing <https://github.com/colour-science/colour-demosaicing>`_, please refer to the following `Contributing <http://colour-science.org/contributing/>`_ guide for `Colour <https://github.com/colour-science/colour>`_.
+
+Bibliography
+------------
+
+The bibliography is available in the repository in either `BibTeX <https://github.com/colour-science/colour-demosaicing/blob/develop/BIBLIOGRAPHY.bib>`_ format or `reStructuredText <https://github.com/colour-science/colour-demosaicing/blob/develop/BIBLIOGRAPHY.rst>`_.
 
 About
 -----
 
-| **sIBL_GUI** by Thomas Mansencal – 2008 - 2012
-| Copyright© 2008 - 2012 – Thomas Mansencal – `thomas.mansencal@gmail.com <mailto:thomas.mansencal@gmail.com>`_
-| This software is released under terms of GNU GPL V3 license: http://www.gnu.org/licenses/
-| `http://www.thomasmansencal.com/ <http://www.thomasmansencal.com/>`_
+| **Colour - Demosaicing** by Colour Developers - 2015
+| Copyright © 2015 – Colour Developers – `colour-science@googlegroups.com <colour-science@googlegroups.com>`_
+| This software is released under terms of New BSD License: http://opensource.org/licenses/BSD-3-Clause
+| `http://github.com/colour-science/colour-demosaicing <http://github.com/colour-science/colour-demosaicing>`_
