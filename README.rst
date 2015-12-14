@@ -19,6 +19,13 @@ The following CFA (Colour Filter Array) demosaicing algorithms are implemented:
 Installation
 ------------
 
+Because of their size, the resources dependencies needed to run the various
+examples and unit tests are not provided within the Pypi package. They are
+separately available as
+`Git Submodules <https://git-scm.com/book/en/v2/Git-Tools-Submodules>`_
+when cloning the
+`repository <https://github.com/colour-science/colour-demosaicing>`_.
+
 Dependencies
 ^^^^^^^^^^^^
 
@@ -46,14 +53,6 @@ The documentation building dependencies are installed as follows::
 
     pip install 'colour-demosaicing[docs]'
 
-.. note::
-
-    Because of their size, the resources dependencies needed to run the various
-    examples and unit tests are not provided with the Pypi package. They are
-    separately available as
-    `Git Submodules <https://git-scm.com/book/en/v2/Git-Tools-Submodules>`_
-    when cloning the
-    `repository <https://github.com/colour-science/colour-demosaicing>`_.
 
 Usage
 -----
