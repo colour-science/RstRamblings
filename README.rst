@@ -1,3 +1,8 @@
+Colour Science for Python
+=========================
+
+..  image:: https://raw.githubusercontent.com/colour-science/colour-branding/master/images/Colour_Logo_Medium_001.png
+
 .. start-badges
 
 .. list-table::
@@ -42,11 +47,6 @@
     :alt: DOI
 
 .. end-badges
-
-Colour Science for Python
-=========================
-
-..  image:: https://raw.githubusercontent.com/colour-science/colour-branding/master/images/Colour_Logo_Medium_001.png
 
 `Colour <https://github.com/colour-science/colour>`_ is a
 `Python <https://www.python.org/>`_ colour science package implementing a
