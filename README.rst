@@ -1,33 +1,47 @@
-.. image:: https://img.shields.io/gitter/room/colour-science/colour.svg
+.. start-badges
+
+.. list-table::
+    :stub-columns: 1
+
+    * - Social
+      - |gitter|
+    * - Status
+      - | |waffle| |travis| |coveralls| |scrutinizer| |landscape| |gemnasium|
+    * - Package
+      - |version| |downloads| |zenodo|
+
+.. |gitter| image:: https://img.shields.io/gitter/room/colour-science/colour.svg
     :target: https://gitter.im/colour-science/colour/
     :alt: Gitter
-.. image:: https://badge.waffle.io/colour-science/colour.svg?label=ready&title=Ready
+.. |waffle| image:: https://badge.waffle.io/colour-science/colour.svg?label=ready&title=Ready
     :target: https://github.com/colour-science/colour/issues
     :alt: Issues Ready
-.. image:: https://img.shields.io/travis/colour-science/colour/develop.svg
+.. |travis| image:: https://img.shields.io/travis/colour-science/colour/develop.svg
     :target: https://travis-ci.org/colour-science/colour
     :alt: Develop Build Status
-.. image:: http://img.shields.io/coveralls/colour-science/colour/develop.svg
+.. |coveralls| image:: http://img.shields.io/coveralls/colour-science/colour/develop.svg
     :target: https://coveralls.io/r/colour-science/colour
     :alt: Coverage Status
-.. image:: https://img.shields.io/scrutinizer/g/colour-science/colour/develop.svg
+.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/colour-science/colour/develop.svg
     :target: https://scrutinizer-ci.com/g/colour-science/colour/
     :alt: Code Quality
-.. image:: https://landscape.io/github/colour-science/colour/master/landscape.png
+.. |landscape| image:: https://landscape.io/github/colour-science/colour/master/landscape.png
     :target: https://landscape.io/github/colour-science/colour
     :alt: Code Quality
-.. image:: https://img.shields.io/gemnasium/colour-science/colour.svg
+.. |gemnasium| image:: https://img.shields.io/gemnasium/colour-science/colour.svg
     :target: https://gemnasium.com/colour-science/colour
     :alt: Dependencies Status
-.. image:: https://badge.fury.io/py/colour-science.svg
+.. |version| image:: https://badge.fury.io/py/colour-science.svg
     :target: https://pypi.python.org/pypi/colour-science
     :alt: Package Version
-.. image:: https://img.shields.io/pypi/dm/colour-science.svg
+.. |downloads| image:: https://img.shields.io/pypi/dm/colour-science.svg
     :target: https://pypi.python.org/pypi/colour-science
     :alt: Package Downloads
-.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.35309.png
+.. |zenodo| image:: https://zenodo.org/badge/doi/10.5281/zenodo.35309.png
     :target: http://dx.doi.org/10.5281/zenodo.35309
     :alt: DOI
+
+.. end-badges
 
 Colour Science for Python
 =========================
