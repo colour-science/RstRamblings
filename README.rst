@@ -11,9 +11,11 @@ Colour Science for Python
     * - Social
       - |gitter|
     * - Status
-      - | |waffle| |travis| |coveralls| |scrutinizer| |landscape| |gemnasium|
+      - |waffle| |travis| |coveralls| |scrutinizer| |landscape| |gemnasium|
     * - Package
-      - |version| |downloads| |zenodo|
+      - |version| |downloads|
+    * - Citation
+      - |zenodo|
 
 .. |gitter| image:: https://img.shields.io/gitter/room/colour-science/colour.svg
     :target: https://gitter.im/colour-science/colour/
