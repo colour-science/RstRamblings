@@ -13,7 +13,7 @@ Colour Science for Python
     * - Status
       - |waffle| |travis| |coveralls| |scrutinizer| |landscape| |gemnasium|
     * - Package
-      - |version| |downloads|
+      - |version|
     * - Citation
       - |zenodo|
 
@@ -41,11 +41,8 @@ Colour Science for Python
 .. |version| image:: https://badge.fury.io/py/colour-science.svg
     :target: https://pypi.python.org/pypi/colour-science
     :alt: Package Version
-.. |downloads| image:: https://img.shields.io/pypi/dm/colour-science.svg
-    :target: https://pypi.python.org/pypi/colour-science
-    :alt: Package Downloads
-.. |zenodo| image:: https://zenodo.org/badge/doi/10.5281/zenodo.35309.png
-    :target: http://dx.doi.org/10.5281/zenodo.35309
+.. |zenodo| image:: https://zenodo.org/badge/doi/10.5281/zenodo.821825.png
+    :target: http://dx.doi.org/10.5281/zenodo.821825
     :alt: DOI
 
 .. end-badges
@@ -67,19 +64,45 @@ and collection of objects, please see the
 Installation
 ------------
 
-The installation procedure is described in the
+`Anaconda <https://www.continuum.io/downloads>`_ from *Continuum Analytics*
+is the Python distribution we use to develop **Colour**:
+it ships all the scientific dependencies we require and is easily deployed
+cross-platform:
+
+.. code-block:: bash
+
+    $ conda create -y -n python-colour
+    $ source activate python-colour
+    $ conda install -y -c conda-forge colour-science
+
+**Colour** can be easily installed from the _`Python Package Index <https://pypi.python.org/pypi/colour-science/>`_ by issuing this command in a shell:
+
+.. code-block:: bash
+
+    $ pip install colour-science
+
+The detailed installation procedure is described in the
 `Installation Guide <http://colour-science.org/installation-guide/>`_.
 
 Usage
 -----
 
+At its most basic, `Colour <https://github.com/colour-science/colour>`_ only requires
+to be imported:
+
+.. code-block:: bash
+
+    $ conda create -y -n python-colour
+    $ source activate python-colour
+    $ conda install -y -c conda-forge colour-science
+
 The two main references for `Colour <https://github.com/colour-science/colour>`_
-usage are the complete Sphinx `API Reference <http://colour.readthedocs.org/en/latest/>`_
-and the `IPython Notebooks <http://nbviewer.ipython.org/github/colour-science/colour-ipython/blob/master/notebooks/colour.ipynb>`_
+usage are the complete Sphinx `API Reference <https://colour.readthedocs.io/en/latest/api.html>`_
+and the `Jupyter Notebooks <http://nbviewer.jupyter.org/github/colour-science/colour-notebooks/blob/master/notebooks/colour.ipynb>`_
 with detailed historical and theoretical context and images:
 
--   `API Reference <http://colour.readthedocs.org/en/latest/>`_
--   `IPython Notebooks <http://nbviewer.ipython.org/github/colour-science/colour-ipython/blob/master/notebooks/colour.ipynb>`_
+-   `API Reference <https://colour.readthedocs.io/en/latest/api.html>`_
+-   `Jupyter Notebooks <http://nbviewer.jupyter.org/github/colour-science/colour-notebooks/blob/master/notebooks/colour.ipynb>`_
 
 Contributing
 ------------
@@ -104,7 +127,7 @@ format or `reStructuredText <https://github.com/colour-science/colour/blob/devel
 About
 -----
 
-| **Colour** by Colour Developers - 2013 - 2015
-| Copyright © 2013 - 2015 – Colour Developers – `colour-science@googlegroups.com <colour-science@googlegroups.com>`_
+| **Colour** by Colour Developers - 2013-2017
+| Copyright © 2013-2017 – Colour Developers – `colour-science@googlegroups.com <colour-science@googlegroups.com>`_
 | This software is released under terms of New BSD License: http://opensource.org/licenses/BSD-3-Clause
 | `http://github.com/colour-science/colour <http://github.com/colour-science/colour>`_
