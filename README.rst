@@ -47,6 +47,61 @@ Colour Science for Python
 
 .. end-badges
 
+
+What is Colour?
+---------------
+
+`Colour <https://github.com/colour-science/colour>`_ is a
+`Python <https://www.python.org/>`_ colour science package implementing a
+comprehensive number of colour theory transformations and algorithms.
+
+It is open source and freely available under the
+`New BSD License <http://opensource.org/licenses/BSD-3-Clause>`_ terms.
+
+Features
+--------
+
+`Colour <https://github.com/colour-science/colour>`_ features a rich dataset
+and collection of objects, please see the
+`features <http://colour-science.org/features/>`_ page for more information.
+
+Installation
+------------
+
+`Anaconda <https://www.continuum.io/downloads>`_ from *Continuum Analytics*
+is the Python distribution we use to develop **Colour**:
+it ships all the scientific dependencies we require and is easily deployed
+cross-platform:
+
+.. code-block:: bash
+
+    $ conda create -y -n python-colour
+    $ source activate python-colour
+    $ conda install -y -c conda-forge colour-science
+
+**Colour** can be easily installed from the `Python Package Index <https://pypi.python.org/pypi/colour-science/>`_ by issuing this command in a shell:
+
+.. code-block:: bash
+
+    $ pip install colour-science
+
+The detailed installation procedure is described in the
+`Installation Guide <http://colour-science.org/installation-guide/>`_.
+
+Usage
+-----
+
+The two main references for `Colour <https://github.com/colour-science/colour>`_
+usage are the complete Sphinx `API Reference <https://colour.readthedocs.io/en/latest/api.html>`_
+and the `Jupyter Notebooks <http://nbviewer.jupyter.org/github/colour-science/colour-notebooks/blob/master/notebooks/colour.ipynb>`_
+with detailed historical and theoretical context and images:
+
+-   `API Reference <https://colour.readthedocs.io/en/latest/api.html>`_
+-   `Jupyter Notebooks <http://nbviewer.jupyter.org/github/colour-science/colour-notebooks/blob/master/notebooks/colour.ipynb>`_
+
+Examples
+~~~~~~~~
+
 >>> import colour
 
 *Algebra*
@@ -463,57 +518,6 @@ Colour Science for Python
 
     >>> colour.RGB_colourspace_volume_MonteCarlo(colour.sRGB_COLOURSPACE)
     857011.5
-
-What is Colour?
----------------
-
-`Colour <https://github.com/colour-science/colour>`_ is a
-`Python <https://www.python.org/>`_ colour science package implementing a
-comprehensive number of colour theory transformations and algorithms.
-
-It is open source and freely available under the
-`New BSD License <http://opensource.org/licenses/BSD-3-Clause>`_ terms.
-
-Features
---------
-
-`Colour <https://github.com/colour-science/colour>`_ features a rich dataset
-and collection of objects, please see the
-`features <http://colour-science.org/features/>`_ page for more information.
-
-Installation
-------------
-
-`Anaconda <https://www.continuum.io/downloads>`_ from *Continuum Analytics*
-is the Python distribution we use to develop **Colour**:
-it ships all the scientific dependencies we require and is easily deployed
-cross-platform:
-
-.. code-block:: bash
-
-    $ conda create -y -n python-colour
-    $ source activate python-colour
-    $ conda install -y -c conda-forge colour-science
-
-**Colour** can be easily installed from the `Python Package Index <https://pypi.python.org/pypi/colour-science/>`_ by issuing this command in a shell:
-
-.. code-block:: bash
-
-    $ pip install colour-science
-
-The detailed installation procedure is described in the
-`Installation Guide <http://colour-science.org/installation-guide/>`_.
-
-Usage
------
-
-The two main references for `Colour <https://github.com/colour-science/colour>`_
-usage are the complete Sphinx `API Reference <https://colour.readthedocs.io/en/latest/api.html>`_
-and the `Jupyter Notebooks <http://nbviewer.jupyter.org/github/colour-science/colour-notebooks/blob/master/notebooks/colour.ipynb>`_
-with detailed historical and theoretical context and images:
-
--   `API Reference <https://colour.readthedocs.io/en/latest/api.html>`_
--   `Jupyter Notebooks <http://nbviewer.jupyter.org/github/colour-science/colour-notebooks/blob/master/notebooks/colour.ipynb>`_
 
 Contributing
 ------------
