@@ -17,28 +17,25 @@ Colour Science for Python
     * - Citation
       - |zenodo|
 
-.. |gitter| image:: https://img.shields.io/gitter/room/colour-science/colour.svg
+.. |gitter| image:: https://img.shields.io/gitter/room/colour-science/colour.svg?style=flat-square
     :target: https://gitter.im/colour-science/colour/
     :alt: Gitter
-.. |waffle| image:: https://badge.waffle.io/colour-science/colour.svg?label=ready&title=Ready
-    :target: https://github.com/colour-science/colour/issues
-    :alt: Issues Ready
-.. |travis| image:: https://img.shields.io/travis/colour-science/colour/develop.svg
+.. |travis| image:: https://img.shields.io/travis/colour-science/colour/develop.svg?style=flat-square
     :target: https://travis-ci.org/colour-science/colour
     :alt: Develop Build Status
-.. |coveralls| image:: http://img.shields.io/coveralls/colour-science/colour/develop.svg
+.. |coveralls| image:: http://img.shields.io/coveralls/colour-science/colour/develop.svg?style=flat-square
     :target: https://coveralls.io/r/colour-science/colour
     :alt: Coverage Status
-.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/colour-science/colour/develop.svg
+.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/colour-science/colour/develop.svg?style=flat-square
     :target: https://scrutinizer-ci.com/g/colour-science/colour/
     :alt: Code Quality
 .. |landscape| image:: https://landscape.io/github/colour-science/colour/master/landscape.png
     :target: https://landscape.io/github/colour-science/colour
     :alt: Code Quality
-.. |gemnasium| image:: https://img.shields.io/gemnasium/colour-science/colour.svg
+.. |gemnasium| image:: https://img.shields.io/gemnasium/colour-science/colour.svg?style=flat-square
     :target: https://gemnasium.com/colour-science/colour
     :alt: Dependencies Status
-.. |version| image:: https://badge.fury.io/py/colour-science.svg
+.. |version| image:: https://img.shields.io/pypi/v/colour-science/colour.svg?style=flat-square
     :target: https://pypi.python.org/pypi/colour-science
     :alt: Package Version
 .. |zenodo| image:: https://zenodo.org/badge/doi/10.5281/zenodo.821825.png
