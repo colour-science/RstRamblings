@@ -104,7 +104,7 @@ Examples
 
 >>> import colour
 
-*Algebra*
+**Algebra**
 
 .. code-block:: python
 
@@ -115,14 +115,14 @@ Examples
     >>> colour.SpragueInterpolator(x, y)([0.25, 0.75, 5.50])
     array([  6.72951612,   7.81406251,  43.77379185])
 
-*Biochemistry*
+**Biochemistry**
 
 .. code-block:: python
 
     >>> colour.reaction_rate_MichealisMenten(0.5, 2.5, 0.8)
     0.96153846153846145
 
-*Spectral Computations*
+**Spectral Computations**
 
 .. code-block:: python
 
@@ -131,7 +131,7 @@ Examples
     >>> sorted(colour.SPECTRAL_TO_XYZ_METHODS.keys())
     [u'ASTM E308-15', u'Integration', u'astm2015']
 
-*Blackbody Spectral Radiance Computation*
+**Blackbody Spectral Radiance Computation**
 
 .. code-block:: python
 
@@ -148,7 +148,7 @@ Examples
                               extrapolator=Extrapolator,
                               extrapolator_args={u'right': None, u'method': u'Constant', u'left': None})
 
-*Dominant, Complementary Wavelength & Colour Purity Computation*
+**Dominant, Complementary Wavelength & Colour Purity Computation**
 
 .. code-block:: python
 
@@ -159,7 +159,7 @@ Examples
      array([ 0.00369694,  0.63895775]),
      array([ 0.00369694,  0.63895775]))
 
-*Lightness Computation*
+**Lightness Computation**
 
 .. code-block:: python
 
@@ -172,7 +172,7 @@ Examples
      u'Lstar1976',
      u'Wyszecki 1963']
 
-*Luminance Computation*
+**Luminance Computation**
 
 .. code-block:: python
 
@@ -186,7 +186,7 @@ Examples
      u'astm2008',
      u'cie1976']
 
-*Whiteness Computation*
+**Whiteness Computation**
 
 .. code-block:: python
 
@@ -201,7 +201,7 @@ Examples
      u'Taube 1960',
      u'cie2004']
 
-*Yellowness Computation*
+**Yellowness Computation**
 
 .. code-block:: python
 
@@ -211,7 +211,7 @@ Examples
     >>> sorted(colour.YELLOWNESS_METHODS.keys())
     [u'ASTM D1925', u'ASTM E313']
 
-*Luminous Flux, Efficiency & Efficacy Computation*
+**Luminous Flux, Efficiency & Efficacy Computation**
 
 .. code-block:: python
     
@@ -223,7 +223,7 @@ Examples
     >>> colour.luminous_efficiency(spd)
     136.21708031547874
 
-*Colour Models*
+**Colour Models**
 
 .. code-block:: python
 
@@ -298,7 +298,7 @@ Examples
     >>> colour.RGB_to_YCbCr([1.0, 1.0, 1.0])
     array([ 0.92156863,  0.50196078,  0.50196078])
 
-*RGB Colourspaces*
+**RGB Colourspaces**
 
 .. code-block:: python
 
@@ -353,7 +353,7 @@ Examples
      'prophoto',
      u'sRGB']
 
-*OETFs*
+**OETFs**
 
 .. code-block:: python
 
@@ -373,7 +373,7 @@ Examples
      'ST 2084',
      'sRGB']
 
-*EOTFs*
+**EOTFs**
 
 .. code-block:: python
 
@@ -390,14 +390,14 @@ Examples
      'SMPTE 240M',
      'ST 2084']
 
-*OOTFs*
+**OOTFs**
 
 .. code-block:: python
 
     >>> sorted(colour.OOTFS.keys())
     ['ITU-R BT.2100 HLG', 'ITU-R BT.2100 PQ']
 
-*Log Encoding / Decoding Curves*
+**Log Encoding / Decoding Curves**
 
 .. code-block:: python
 
@@ -424,7 +424,7 @@ Examples
      'V-Log',
      'ViperLog']
 
-*Chromatic Adaptation Models*
+**Chromatic Adaptation Models**
 
 .. code-block:: python
 
@@ -434,7 +434,7 @@ Examples
     >>> colour.chromatic_adaptation_VonKries(XYZ, XYZ_w, XYZ_wr)
     array([ 0.08397461,  0.11413219,  0.28625545])
 
-*Colour Appearance Models*
+**Colour Appearance Models**
 
 .. code-block:: python
 
@@ -445,7 +445,7 @@ Examples
     >>> colour.XYZ_to_CIECAM02(XYZ, XYZ_w, L_A, Y_b)
     CIECAM02_Specification(J=41.731091132513917, C=0.10470775717103062, h=219.04843265831178, s=2.3603053739196032, Q=195.37132596607671, M=0.10884217566914849, H=278.06073585667758, HC=None)
 
-*Colour Difference*
+**Colour Difference**
 
 .. code-block:: python
 
@@ -469,7 +469,7 @@ Examples
     >>> sorted(colour.DELTA_E_LUO2006_METHODS.keys())
     [u'CAM02-LCD', u'CAM02-SCD', u'CAM02-UCS']
 
-*Colour Notation Systems*
+**Colour Notation Systems**
 
 .. code-block:: python
 
@@ -487,7 +487,7 @@ Examples
     >>> colour.xyY_to_munsell_colour([0.38736945, 0.35751656, 0.59362000])
     u'4.2YR 8.1/5.3'
 
-*Optical Phenomenons*
+**Optical Phenomenons**
 
 .. code-block:: python
 
@@ -504,8 +504,7 @@ Examples
                               extrapolator=Extrapolator,
                               extrapolator_args={u'right': None, u'method': u'Constant', u'left': None})
 
-
-*Light Quality*
+**Light Quality**
 
 .. code-block:: python
 
@@ -514,7 +513,7 @@ Examples
     >>> colour.colour_rendering_index(colour.ILLUMINANTS_RELATIVE_SPDS['F2'])
     64.151520202968015
 
-*Reflectance Recovery*
+**Reflectance Recovery**
 
 .. code-block:: python
 
@@ -531,8 +530,7 @@ Examples
                               extrapolator=Extrapolator,
                               extrapolator_args={u'right': None, u'method': u'Constant', u'left': None})
 
-
-*Correlated Colour Temperature Computation Methods*
+**Correlated Colour Temperature Computation Methods**
 
 .. code-block:: python
 
@@ -551,8 +549,7 @@ Examples
      >>> sorted(colour.CCT_TO_XY_METHODS.keys())
      [u'CIE Illuminant D Series', u'Kang 2002', u'cie_d', u'kang2002']
 
-
-*Volume*
+**Volume**
 
 .. code-block:: python
 
