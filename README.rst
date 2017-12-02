@@ -214,9 +214,14 @@ Examples
 *Luminous Flux, Efficiency & Efficacy Computation*
 
 .. code-block:: python
-
-    >>> colour.luminous_flux(colour.LIGHT_SOURCES_RELATIVE_SPDS['Neodimium Incandescent'])
+    
+    >>> spd = colour.LIGHT_SOURCES_RELATIVE_SPDS['Neodimium Incandescent']
+    >>> colour.luminous_flux(spd)
     3807.655527367202
+    >>> colour.luminous_efficiency(spd)
+    0.19943935624521045
+    >>> colour.luminous_efficiency(spd)
+    136.21708031547874
 
 *Colour Models*
 
