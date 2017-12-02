@@ -8,14 +8,8 @@ Colour Science for Python
 .. list-table::
     :stub-columns: 1
 
-    * - Social
-      - |gitter|
-    * - Status
-      - |travis| |coveralls| |scrutinizer| |landscape| |gemnasium|
-    * - Package
-      - |version|
-    * - Citation
-      - |zenodo|
+    * - 
+      - |gitter| |travis| |coveralls| |scrutinizer| |landscape| |version| |zenodo|
 
 .. |gitter| image:: https://img.shields.io/gitter/room/colour-science/colour.svg?style=flat-square
     :target: https://gitter.im/colour-science/colour/
@@ -32,9 +26,6 @@ Colour Science for Python
 .. |landscape| image:: https://landscape.io/github/colour-science/colour/master/landscape.png?style=flat-square
     :target: https://landscape.io/github/colour-science/colour
     :alt: Code Quality
-.. |gemnasium| image:: https://img.shields.io/gemnasium/colour-science/colour.svg?style=flat-square
-    :target: https://gemnasium.com/colour-science/colour
-    :alt: Dependencies Status
 .. |version| image:: https://img.shields.io/pypi/v/colour-science.svg?style=flat-square
     :target: https://pypi.python.org/pypi/colour-science
     :alt: Package Version
