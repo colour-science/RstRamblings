@@ -5,11 +5,7 @@ Colour Science for Python
 
 .. start-badges
 
-.. list-table::
-    :stub-columns: 1
-
-    * - 
-      - |gitter| |travis| |coveralls| |scrutinizer| |landscape| |version| |zenodo|
+|gitter| |travis| |coveralls| |scrutinizer| |landscape| |version| |zenodo|
 
 .. |gitter| image:: https://img.shields.io/gitter/room/colour-science/colour.svg?style=flat-square
     :target: https://gitter.im/colour-science/colour/
