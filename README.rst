@@ -75,7 +75,7 @@ cross-platform:
     $ source activate python-colour
     $ conda install -y -c conda-forge colour-science
 
-**Colour** can be easily installed from the _`Python Package Index <https://pypi.python.org/pypi/colour-science/>`_ by issuing this command in a shell:
+**Colour** can be easily installed from the `Python Package Index <https://pypi.python.org/pypi/colour-science/>`_ by issuing this command in a shell:
 
 .. code-block:: bash
 
@@ -90,11 +90,13 @@ Usage
 At its most basic, `Colour <https://github.com/colour-science/colour>`_ only requires
 to be imported:
 
-.. code-block:: bash
+.. code-block:: python
 
-    $ conda create -y -n python-colour
-    $ source activate python-colour
-    $ conda install -y -c conda-forge colour-science
+    >>> import colour
+    # Computing *Correlated Colour Temperature* for *D50* using *Hernandez (1999)* method.
+    >>> il = colour.ILLUMINANTS['CIE 1931 2 Degree Standard Observer']['D50']
+    >>> colour.xy_to_CCT(il, method='Hernandez 1999')
+    5001.3574639752351
 
 The two main references for `Colour <https://github.com/colour-science/colour>`_
 usage are the complete Sphinx `API Reference <https://colour.readthedocs.io/en/latest/api.html>`_
