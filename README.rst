@@ -263,6 +263,41 @@ Examples
     >>> colour.JMh_CIECAM02_to_CAM02UCS(JMh)
     array([ 54.90433134,  -0.08442362,  -0.06848314])
 
+    >>> XYZ = [0.07049534, 0.10080000, 0.09558313]
+    >>> illuminant_XYZ = [0.34570, 0.35850]
+    >>> illuminant_RGB = [0.31270, 0.32900]
+    >>> chromatic_adaptation_transform = 'Bradford'
+    >>> XYZ_to_RGB_matrix = [
+             [3.24062548, -1.53720797, -0.49862860],
+             [-0.96893071, 1.87575606, 0.04151752],
+             [0.05571012, -0.20402105, 1.05699594]]
+    >>> colour.XYZ_to_RGB(
+             XYZ,
+             illuminant_XYZ,
+             illuminant_RGB,
+             XYZ_to_RGB_matrix,
+             chromatic_adaptation_transform)
+    array([ 0.01100154,  0.12735048,  0.11632713])
+
+    >>> colour.RGB_to_ICTCP([0.35181454, 0.26934757, 0.21288023])
+    array([ 0.09554079, -0.00890639,  0.01389286])
+
+    >>> colour.RGB_to_HSV([0.49019608, 0.98039216, 0.25098039])
+    array([ 0.27867383,  0.744     ,  0.98039216])
+
+    >>> p = [0.73470, 0.26530, 0.00000, 1.00000, 0.00010, -0.07700]
+    >>> w = [0.32168, 0.33767]
+    >>> colour.normalised_primary_matrix(p, w)
+    array([[  9.52552396e-01,   0.00000000e+00,   9.36786317e-05],
+           [  3.43966450e-01,   7.28166097e-01,  -7.21325464e-02],
+           [  0.00000000e+00,   0.00000000e+00,   1.00882518e+00]])    
+
+    >>> colour.RGB_to_Prismatic([0.25, 0.50, 0.75])
+    array([ 0.75      ,  0.16666667,  0.33333333,  0.5       ])
+
+    >>> colour.RGB_to_YCbCr([1.0, 1.0, 1.0])
+    array([ 0.92156863,  0.50196078,  0.50196078])
+
 *RGB Colourspaces*
 
 .. code-block:: python
