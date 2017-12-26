@@ -31,6 +31,8 @@ Colour Science for Python
 
 .. end-badges
 
+🍎
+
 `Colour <https://github.com/colour-science/colour>`_ is a
 `Python <https://www.python.org/>`_ colour science package implementing a
 comprehensive number of colour theory transformations and algorithms.
