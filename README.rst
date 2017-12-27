@@ -5,27 +5,24 @@ Colour Science for Python
 
 .. start-badges
 
-|gitter| |travis| |coveralls| |scrutinizer| |landscape| |version| |zenodo|
+|gitter| |travis| |coveralls| |codacy| |version| |zenodo|
 
-.. |gitter| image:: https://img.shields.io/gitter/room/colour-science/colour.svg?style=flat-square
+.. |gitter| image:: https://img.shields.io/gitter/room/colour-science/colour.svg?style=for-the-badge
     :target: https://gitter.im/colour-science/colour/
     :alt: Gitter
-.. |travis| image:: https://img.shields.io/travis/colour-science/colour/develop.svg?style=flat-square
+.. |travis| image:: https://img.shields.io/travis/colour-science/colour/develop.svg?style=for-the-badge
     :target: https://travis-ci.org/colour-science/colour
     :alt: Develop Build Status
-.. |coveralls| image:: http://img.shields.io/coveralls/colour-science/colour/develop.svg?style=flat-square
+.. |coveralls| image:: http://img.shields.io/coveralls/colour-science/colour/develop.svg?style=for-the-badge
     :target: https://coveralls.io/r/colour-science/colour
     :alt: Coverage Status
-.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/colour-science/colour/develop.svg?style=flat-square
-    :target: https://scrutinizer-ci.com/g/colour-science/colour/
-    :alt: Code Quality
-.. |landscape| image:: https://landscape.io/github/colour-science/colour/master/landscape.png?style=flat-square
-    :target: https://landscape.io/github/colour-science/colour
-    :alt: Code Quality
-.. |version| image:: https://img.shields.io/pypi/v/colour-science.svg?style=flat-square
+.. |codacy| image:: https://img.shields.io/codacy/grade/7d0d61f8e7294533b27ae00ee6f50fb2/develop.svg?style=for-the-badge
+    :target: https://www.codacy.com/app/colour-science/colour
+    :alt: Code Grade
+.. |version| image:: https://img.shields.io/pypi/v/colour-science.svg?style=for-the-badge
     :target: https://pypi.python.org/pypi/colour-science
     :alt: Package Version
-.. |zenodo| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.821825.svg
+.. |zenodo| image:: https://img.shields.io/badge/DOI-10.5281/zenodo.821825-blue.svg?style=for-the-badge
     :target: http://dx.doi.org/10.5281/zenodo.821825
     :alt: DOI
 
