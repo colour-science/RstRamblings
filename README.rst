@@ -41,7 +41,7 @@ It is open source and freely available under the
 
 .. contents:: **Table of Contents**
     :backlinks: none
-    :maxdepth: 3
+    :depth: 3
 
 .. sectnum::
 
