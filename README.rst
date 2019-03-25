@@ -41,13 +41,14 @@ It is open source and freely available under the
 
 .. contents:: **Table of Contents**
     :backlinks: none
+    :maxdepth: 3
 
 .. sectnum::
 
 Draft Release Notes
 -------------------
 
-The draft release notes from the
+The draft release notes of the
 `develop <https://github.com/colour-science/colour/tree/develop>`_
 branch are available at this
 `url <https://gist.github.com/KelSolaar/4a6ebe9ec3d389f0934b154fec8df51d>`_.
