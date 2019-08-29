@@ -2,6 +2,7 @@
     >>> convert(sd, 'Spectral Distribution', 'sRGB', verbose_parameters={'describe': 'short'})
 
 ::
+
     ===============================================================================
     *                                                                             *
     *   [ Conversion Path ]                                                       *
