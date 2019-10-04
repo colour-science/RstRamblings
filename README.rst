@@ -1,15 +1,14 @@
 .. raw:: html
 
     <details>
-        <summary>stuff with *mark* **down**</summary>
+        <summary>Stuff with <em>reStructuredText</em></summary>
 
-        <p>
+Title
+#####
 
-        Title
-        #####
+Sub-Title
+---------
 
-        Sub-Title
-        ---------
+.. raw:: html
 
-        </p>
     </details>
