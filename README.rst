@@ -1,3 +1,5 @@
+.. code-block:: python
+
     >>> sd = colour.COLOURCHECKERS_SDS['ColorChecker N Ohta']['dark skin']
     >>> convert(sd, 'Spectral Distribution', 'sRGB', verbose_parameters={'describe': 'short'})
 
@@ -12,6 +14,8 @@
     ===============================================================================
 
 ::
+
+.. code-block:: python
 
     array([ 0.45675795,  0.30986982,  0.24861924])
     >>> illuminant = colour.ILLUMINANTS_SDS['FL2']
