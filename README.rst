@@ -5,12 +5,11 @@
 
         <p>
 
-        ## _formatted_ **heading** with [a](link)
+        Title
+        #####
 
-        ---
-        {{standard 3-backtick code block omitted from here due to escaping issues}}
-        ---
+        Sub-Title
+        ---------
 
-        Collapsible until here.
         </p>
     </details>
