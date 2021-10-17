@@ -1459,3 +1459,121 @@ format.
 
 See Also
 --------
+
+**Python**
+
+- `Colorio <https://github.com/nschloe/colorio/>`__ by Schlömer, N.
+- `ColorPy <http://markkness.net/colorpy/ColorPy.html>`__ by Kness, M.
+- `Colorspacious <https://colorspacious.readthedocs.io/>`__ by Smith, N. J., et al.
+- `python-colormath <https://python-colormath.readthedocs.io/>`__ by Taylor, G., et al.
+
+**Go**
+
+- `go-colorful <https://github.com/lucasb-eyer/go-colorful/>`__  by Beyer, L., et al.
+
+**.NET**
+
+- `Colourful <https://github.com/tompazourek/Colourful>`__ by Pažourek, T., et al.
+
+**Julia**
+
+- `Colors.jl <https://github.com/JuliaGraphics/Colors.jl>`__ by Holy, T., et al.
+
+**Matlab & Octave**
+
+- `COLORLAB <https://www.uv.es/vista/vistavalencia/software/colorlab.html>`__ by Malo, J., et al.
+- `Psychtoolbox <http://psychtoolbox.org/>`__ by Brainard, D., et al.
+- `The Munsell and Kubelka-Munk Toolbox <http://www.munsellcolourscienceforpainters.com/MunsellAndKubelkaMunkToolbox/MunsellAndKubelkaMunkToolbox.html>`__ by Centore, P.
+
+Code of Conduct
+---------------
+
+The *Code of Conduct*, adapted from the `Contributor Covenant 1.4 <https://www.contributor-covenant.org/version/1/4/code-of-conduct.html>`__,
+is available on the `Code of Conduct <https://www.colour-science.org/code-of-conduct/>`__ page.
+
+.. begin-trim-long-description
+
+Contact & Social
+----------------
+
+The *Colour Developers* can be reached via different means:
+
+- `Email <mailto:colour-developers@colour-science.org>`__
+- `Discourse <https://colour-science.discourse.group/>`__
+- `Facebook <https://www.facebook.com/python.colour.science>`__
+- `Github Discussions <https://github.com/colour-science/colour/discussions>`__
+- `Gitter <https://gitter.im/colour-science/colour>`__
+- `Twitter <https://twitter.com/colour_science>`__
+
+Thank You!
+----------
+
+.. raw:: html
+
+    <h3 align="center">Coffee Sponsors</h3>
+
+.. raw:: html
+
+    <table>
+        <tbody>
+            <tr>
+                <td align="center" valign="middle">
+                    <a href="https://opencollective.com/static/images/default-anonymous-logo.svg" target="_blank">
+                        <img width="98px" src="https://opencollective.com/static/images/default-anonymous-logo.svg">
+                    </a>
+                    <p><a href="" target="_blank">Anonymous</a></p>
+                </td>
+                <td align="center" valign="middle">
+                    <a href="https://twitter.com/CLVPTY" target="_blank">
+                        <img width="98px" src="https://pbs.twimg.com/profile_images/973315780388540416/KEddjwch_400x400.jpg">
+                    </a>
+                    <p><a href="https://twitter.com/CLVPTY" target="_blank">Cedric Lejeune</a></p>
+                </td>
+                <td align="center" valign="middle">
+                    <a href="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here" target="_blank">
+                        <img width="98px" src="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here">
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    <a href="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here" target="_blank">
+                        <img width="98px" src="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here">
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    <a href="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here" target="_blank">
+                        <img width="98px" src="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here">
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    <a href="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here" target="_blank">
+                        <img width="98px" src="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here">
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    <a href="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here" target="_blank">
+                        <img width="98px" src="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here">
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    <a href="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here" target="_blank">
+                        <img width="98px" src="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here">
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    <a href="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here" target="_blank">
+                        <img width="98px" src="https://dummyimage.com/98x55/f9f9fc/000000.png&text=Your+Logo+Here">
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+.. end-trim-long-description
+
+About
+-----
+
+| **Colour** by Colour Developers
+| Copyright © 2013-2021 – Colour Developers – `colour-developers@colour-science.org <colour-developers@colour-science.org>`__
+| This software is released under terms of New BSD License: https://opensource.org/licenses/BSD-3-Clause
+| `https://github.com/colour-science/colour <https://github.com/colour-science/colour>`__
