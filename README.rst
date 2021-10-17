@@ -1392,3 +1392,47 @@ Chromaticities
     ...     colourspaces=['ACEScg', 'S-Gamut', 'Pointer Gamut'])
 
 ..  image:: https://colour.readthedocs.io/en/develop/_static/Examples_Plotting_Chromaticities_CIE_1931_Chromaticity_Diagram.png
+
+Colour Rendering Index
+**********************
+
+.. code-block:: python
+
+    >>> plot_single_sd_colour_rendering_index_bars(
+    ...     colour.SDS_ILLUMINANTS['FL2'])
+
+..  image:: https://colour.readthedocs.io/en/develop/_static/Examples_Plotting_CRI.png
+
+ANSI/IES TM-30-18 Colour Rendition Report
+*****************************************
+
+.. code-block:: python
+
+    >>> plot_single_sd_colour_rendition_report(
+    ...     colour.SDS_ILLUMINANTS['FL2'])
+
+..  image:: https://colour.readthedocs.io/en/develop/_static/Examples_Plotting_Colour_Rendition_Report.png
+
+Gamut Section
+*************
+
+.. code-block:: python
+
+    >>> plot_visible_spectrum_section(section_colours='RGB', section_opacity=0.15)
+
+..  image:: https://colour.readthedocs.io/en/develop/_static/Examples_Plotting_Plot_Visible_Spectrum_Section.png
+
+.. code-block:: python
+
+    >>> plot_RGB_colourspace_section('sRGB', section_colours='RGB', section_opacity=0.15)
+
+..  image:: https://colour.readthedocs.io/en/develop/_static/Examples_Plotting_Plot_RGB_Colourspace_Section.png
+
+Colour Temperature
+******************
+
+.. code-block:: python
+
+    >>> plot_planckian_locus_in_chromaticity_diagram_CIE1960UCS(['A', 'B', 'C'])
+
+..  image:: https://colour.readthedocs.io/en/develop/_static/Examples_Plotting_CCT_CIE_1960_UCS_Chromaticity_Diagram.png
