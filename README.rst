@@ -1460,6 +1460,9 @@ format.
 See Also
 --------
 
+Software
+^^^^^^^^
+
 **Python**
 
 - `Colorio <https://github.com/nschloe/colorio/>`__ by Schlömer, N.
