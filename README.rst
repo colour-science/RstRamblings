@@ -1436,3 +1436,26 @@ Colour Temperature
     >>> plot_planckian_locus_in_chromaticity_diagram_CIE1960UCS(['A', 'B', 'C'])
 
 ..  image:: https://colour.readthedocs.io/en/develop/_static/Examples_Plotting_CCT_CIE_1960_UCS_Chromaticity_Diagram.png
+
+Contributing
+------------
+
+If you would like to contribute to **Colour**, please refer to the following
+`Contributing <https://www.colour-science.org/contributing/>`__ guide.
+
+Changes
+-------
+
+The changes are viewable on the `Releases <https://github.com/colour-science/colour/releases>`__ page.
+
+Bibliography
+------------
+
+The bibliography is available on the `Bibliography <https://www.colour-science.org/bibliography/>`__ page.
+
+It is also viewable directly from the repository in
+`BibTeX <https://github.com/colour-science/colour/blob/develop/BIBLIOGRAPHY.bib>`__
+format.
+
+See Also
+--------
