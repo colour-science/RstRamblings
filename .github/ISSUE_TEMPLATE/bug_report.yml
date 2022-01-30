@@ -22,12 +22,12 @@ body:
     attributes:
       label: "Code for Reproduction"
       description: >
-        If possible, please provide a minimum self-contained example.
+        If possible, please provide a minimum self-contained example reproducing the issue.
       placeholder: |
         << Your code here... >>
       render: python
     validations:
-      required: true
+      required: false
 
   - type: textarea
     attributes:
