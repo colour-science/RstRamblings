@@ -4,48 +4,46 @@ title: "BUG: <Please write a comprehensive title after the 'BUG: ' prefix>"
 labels: [00 - Bug]
 
 body:
-- type: markdown
-  attributes:
-    value: >
-      Thank you for taking the time to file a bug report. Before creating a new
-      issue, please make sure to take a few minutes to check the issue tracker
-      for existing issues about the bug.
-    
-- type: textarea
-  attributes: 
-    label: "Describe the issue:"
-  validations:
-    required: true
+  - type: markdown
+    attributes:
+      value: >
+        Thank you for taking the time to file a bug report. Before continuing, please take some time to check for existing [issues](https://github.com/colour-science/colour/issues) and also the fixes in the [draft release notes](https://gist.github.com/KelSolaar/4a6ebe9ec3d389f0934b154fec8df51d).
 
-- type: textarea
-  attributes:
-    label: "Reproduce the code example:"
-    description: >
-      A short code example that reproduces the problem/missing feature. It
-      should be self-contained, i.e., can be copy-pasted into the Python
-      interpreter or run as-is via `python myproblem.py`.
-    placeholder: |
-      import numpy as np
-      << your code here >>
-    render: python
-  validations:
-    required: true
-  
-- type: textarea
-  attributes:
-    label: "Error message:"
-    description: >
-      Please include full error message, if any.
-      If you are reporting a segfault please include a GDB traceback,
-      which you can generate by following
-      [these instructions](https://github.com/numpy/numpy/blob/main/doc/source/dev/development_environment.rst#debugging).
-    placeholder: |
-      << Full traceback starting from `Traceback: ...` >>
-    render: shell
+        The issue could already be fixed in the [develop](https://github.com/colour-science/colour) branch.
 
-- type: textarea
-  attributes:
-    label: "NumPy/Python version information:"
-    description: Output from `import sys, numpy; print(numpy.__version__, sys.version)`.
-  validations:
-    required: true
+        If you have an installation problem, please ensure that you have followed the [installation guide](https://www.colour-science.org/installation-guide/).
+
+  - type: textarea
+    attributes:
+      label: "Issue Description"
+      description: >
+        Describe the issue in a few short sentences.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Code for Reproduction"
+      description: >
+        If possible, please provide a minimum self-contained example.
+      placeholder: |
+        << Your code here... >>
+      render: python
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Exception Message"
+      description: >
+        If any, paste the *full* exception message.
+      placeholder: |
+        << Full traceback starting from `Traceback (most recent call last):...` >>
+      render: shell
+
+  - type: textarea
+    attributes:
+      label: "Environment Information:"
+      description: Output from `import colour; colour.utilities.describe_environment()`.
+    validations:
+      required: true
