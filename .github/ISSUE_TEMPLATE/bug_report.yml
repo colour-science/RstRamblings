@@ -38,6 +38,6 @@ body:
 
   - type: textarea
     attributes:
-      label: "Environment Information:"
+      label: "Environment Information"
       description: If possible, please paste the output from `import colour; colour.utilities.describe_environment()`.
       render: shell
