@@ -14,7 +14,7 @@ body:
     attributes:
       label: "Issue Description"
       description: >
-        Describe the issue in a few short sentences.
+        Please describe the issue in a few short sentences.
     validations:
       required: true
 
@@ -26,14 +26,12 @@ body:
       placeholder: |
         << Your code here... >>
       render: python
-    validations:
-      required: false
 
   - type: textarea
     attributes:
       label: "Exception Message"
       description: >
-        If any, paste the *full* exception message.
+        If any, please paste the *full* exception message.
       placeholder: |
         << Full traceback starting from `Traceback (most recent call last):...` >>
       render: shell
@@ -41,6 +39,5 @@ body:
   - type: textarea
     attributes:
       label: "Environment Information:"
-      description: Output from `import colour; colour.utilities.describe_environment()`.
-    validations:
-      required: true
+      description: If possible, please paste the output from `import colour; colour.utilities.describe_environment()`.
+      render: shell
