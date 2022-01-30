@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report an issue or a bug.
-title: "< Please write a comprehensive title. >"
+title: "< Please use a comprehensive title. >"
 labels: [Defect]
 
 body:
@@ -8,10 +8,7 @@ body:
     attributes:
       value: >
         Thank you for taking the time to file a bug report. Before continuing, please take some time to check for existing [issues](https://github.com/colour-science/colour/issues) and also the fixes in the [draft release notes](https://gist.github.com/KelSolaar/4a6ebe9ec3d389f0934b154fec8df51d).
-
-        The issue could already be fixed in the [develop](https://github.com/colour-science/colour) branch.
-
-        If you have an installation problem, please ensure that you have followed the [installation guide](https://www.colour-science.org/installation-guide/).
+        The issue could already be fixed in the [develop](https://github.com/colour-science/colour) branch. If you have an installation problem, please ensure that you have followed the [installation guide](https://www.colour-science.org/installation-guide/).
 
   - type: textarea
     attributes:
