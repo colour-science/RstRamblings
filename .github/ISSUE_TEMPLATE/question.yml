@@ -6,5 +6,9 @@ labels: [Discussion]
 body:
   - type: markdown
     attributes:
-      value: >
-        Thank you for taking the time to ask a question or discuss. Before continuing, we would prefer that you start a discussion in the dedicated [discussions](https://github.com/colour-science/colour/discussions) section.
+      value: Thank you for taking the time to ask a question or discuss. Before continuing, we would be glad if you were to start a discussion in the dedicated [discussions](https://github.com/colour-science/colour/discussions) section.
+
+  - type: textarea
+    attributes:
+      label: "Question"
+      description: If you are still here, please consider using the dedicated [discussions](https://github.com/colour-science/colour/discussions) section.
