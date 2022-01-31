@@ -1,5 +1,5 @@
 name: Documentation Improvement
-description: Report an improvement related to the documentation.
+description: Report a documentation improvement.
 title: "[DOCUMENTATION]: << Please use a comprehensive title... >>"
 labels: [Documentation]
 
@@ -14,6 +14,8 @@ body:
       label: Documentation Link
       description: >
         Please link to any documentation or examples that you are referencing. Suggested improvements should be based on the [development version of the documentation](https://colour.readthedocs.io/en/develop/).
+      placeholder: >
+        << https://colour.readthedocs.io/en/develop/... >>
     validations:
       required: true
 
@@ -21,22 +23,16 @@ body:
     attributes:
       label: Description
       description: >
-        Please describe how the documentation could be improved, what is missing, unclear or incorrect.
-      placeholder: >
-        * I found [...] to be unclear because [...]
-        * [...] made me think that [...] when really it should be [...]
-        * There is no example showing how to do [...]
+        Please describe what is missing, unclear or incorrect.
     validations:
       required: true
 
   - type: textarea
-    id: improvement
     attributes:
       label: Suggested Improvement
-      placeholder: |
-        * This line should be be changed to say [...]
-        * Include a paragraph explaining [...]
-
+      description: >
+        Please describe how the documentation could be improved.
+        
   - type: textarea
     attributes:
       label: "Environment Information"
