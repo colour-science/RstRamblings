@@ -11,5 +11,7 @@ body:
   - type: textarea
     attributes:
       label: "Question"
-      description: If you are still here, please consider using the dedicated [discussions](https://github.com/colour-science/colour/discussions) area.
-      placeholder: << The discussions area is this way: https://github.com/colour-science/colour/discussions...  >>
+      description: >
+        If you are still here, please consider using the dedicated [discussions](https://github.com/colour-science/colour/discussions) area.
+      placeholder: >
+        << The discussions area is this way: https://github.com/colour-science/colour/discussions...  >>
