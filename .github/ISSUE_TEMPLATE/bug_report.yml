@@ -12,7 +12,7 @@ body:
 
   - type: textarea
     attributes:
-      label: "Issue Description"
+      label: "Description"
       description: >
         Please describe the issue in a few short sentences.
     validations:
