@@ -33,7 +33,7 @@ body:
       description: >
         If any, please paste the *full* exception message.
       placeholder: |
-        << Full traceback starting from `Traceback (most recent call last):...` >>
+        << Full traceback starting from `Traceback (most recent call last):`... >>
       render: shell
 
   - type: textarea
