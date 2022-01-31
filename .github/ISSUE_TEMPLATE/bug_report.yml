@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report an issue or a bug.
-title: "[BUG]: << Please use a comprehensive title. >>"
+title: "[BUG]: << Please use a comprehensive title... >>"
 labels: [Defect]
 
 body:
